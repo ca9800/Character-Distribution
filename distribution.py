@@ -36,26 +36,18 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+import string
+
+string.ascii_lowercase 
 
 
 text = input("Please enter a string of text (the bigger the better): ")
 
 a = text.count('a')
-b = text.count('b')
-c = text.count('c')
-d = text.count('d')
-e = text.count('e')
-f = text.count('f')
-g = text.count('g')
-h = text.count('h')
-
 
 
 if a >= 1:
     print ("a"*a)
-
-
-
 
 
 
