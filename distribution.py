@@ -46,9 +46,9 @@ text = input("Please enter a string of text (the bigger the better): ")
 alphebet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,op,q,r,s,t,u,v,w,x,y,z"
 
 for character in alphebet:
-    a = str(text.count('character'))
+    c = (text.count('character'))
 
-if "a" >= 1:
+if c >= 1:
     print ("a"*character)
 
 
