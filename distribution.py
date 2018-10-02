@@ -36,23 +36,33 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-import string
-
-string.ascii_lowercase 
-
 
 text = input("Please enter a string of text (the bigger the better): ")
 
-a = text.count('a')
-
-
-if a >= 1:
-    print ("a"*a)
 
 
 
 
+alphebet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,op,q,r,s,t,u,v,w,x,y,z"
 
+for character in alphebet:
+    a = str(text.count('character'))
+
+if "a" >= 1:
+    print ("a"*character)
+
+
+
+
+
+
+#for i in [a,b,c]:
+ #   if a >= 1:
+  #      print ("a"*a)
+        
+        
+    
+    
 
 
 
