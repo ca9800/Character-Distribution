@@ -38,11 +38,15 @@ Notice about this example:
 """
 
 text = input("Please enter a string of text (the bigger the better): ")
+c = list(text)
 
 
 
+count = [len(c) for c in text]
+print (count)
 
 
+"""
 alphebet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,op,q,r,s,t,u,v,w,x,y,z"
 
 for character in alphebet:
@@ -60,9 +64,12 @@ if c >= 1:
  #   if a >= 1:
   #      print ("a"*a)
         
-        
-    
-    
+        """
+
+#text = input("Please enter a string of text (the bigger the better): ")
+ 
+
+
 
 
 
