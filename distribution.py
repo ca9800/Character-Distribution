@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Claire Adner
+Credit: Mr. Dennison
 
 Assignment:
 
@@ -37,52 +37,30 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 
-text = input("Please enter a string of text (the bigger the better): ")
-c = list(text)
+
+t = str(input("Please enter a string of text (the bigger the better):"))
+origanal = t
+z = []
+abc = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+t = t.lower()
+for x in abc:
+    z.append(t.count(x))
+w = list(zip(z,abc))
+q = sorted(w)
 
 
+q.reverse()
 
-count = [len(c) for c in text]
-print (count)
+q = sorted(w, key=lambda zsd:(-zsd[0], zsd[1]))
 
+x=0
+z=[]
 
-"""
-alphebet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,op,q,r,s,t,u,v,w,x,y,z"
-
-for character in alphebet:
-    c = (text.count('character'))
-
-if c >= 1:
-    print ("a"*character)
-
-
-
-
-
-
-#for i in [a,b,c]:
- #   if a >= 1:
-  #      print ("a"*a)
-        
-        """
-
-#text = input("Please enter a string of text (the bigger the better): ")
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(' The distribution of characters in "'+origanal+'" is:')
+while x<len(q):
+    print(q[x][0]*q[x][1])
+    x=x+1
 
 
 
